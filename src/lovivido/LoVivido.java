@@ -4,11 +4,17 @@
  */
 package lovivido;
 
+import java.awt.HeadlessException;
 import javax.swing.JOptionPane;
 
 public class LoVivido {
 
     public static void main(String[] args) {
+        calculateAge();
+
+    }
+
+    private static void calculateAge() throws NumberFormatException, HeadlessException {
         String name;
         String age;
 
@@ -33,7 +39,6 @@ public class LoVivido {
         JOptionPane.showMessageDialog(null, "Horas: " + hour, "Numero de horas vividos de " + name, JOptionPane.INFORMATION_MESSAGE);
 
         System.exit(0);
-
     }
 
 }
